@@ -1,0 +1,84 @@
+* {
+  font-family: 'Cabin', 'san-serif';
+  font-size: 3vw;
+}
+body {
+  background-color: #ec4c8b;
+  color: white;
+}
+
+.navbar {
+  align-items: center;
+  height: min-content;
+  background-color: #d1447a;
+}
+.navbar p {
+  margin: 0;
+}
+.navMicSetting {
+  display: flex;
+  gap: 1rem;
+}
+
+.nobel-logo {
+  max-height: 15vh;
+  width: auto;
+}
+.nobelImg {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  max-height: 100%;
+}
+.heading {
+  height: 2.5rem;
+  background-color: #d1447a;
+  display: flex;
+  align-items: center;
+}
+
+/* catefory*/
+
+.category-icon img {
+  -webkit-filter: invert(100%);
+}
+.category-link {
+  height: 30vh;
+  width: 23vw;
+}
+
+.row .eachCateg:nth-child(even) {
+  background-color: #d1447a;
+}
+.row .btn {
+  color: white;
+}
+
+/* search btn*/
+.search-bar {
+  background: #ec4c8b;
+  display: flex;
+  justify-content: center;
+  margin-top: -2px;
+}
+
+.search {
+  margin: 3% 0;
+  width: 50%;
+  height: auto;
+  border: 0;
+  outline: 0;
+  padding: 0 4%;
+  border-radius: 30px;
+  text-align: center;
+}
+
+/* each category has a different background color */
+
+.row .eachBtn:nth-child(8n + 2),
+.row .eachBtn:nth-child(8n + 5),
+.row .eachBtn:nth-child(8n + 7),
+.row .eachBtn:nth-child(8n + 4) {
+  background-color: #d1447a;
+}
