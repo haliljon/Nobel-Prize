@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom';
 import { nobelPrizeActions } from '../redux/nobel-prize'
@@ -13,20 +13,29 @@ const EachCategory = () => {
             newArray.push(nobelPrizes[i])
         }
     }
-    console.log(newArray[15]);
+    const [searchTerm, setSearchTerm] = useState([]);
+    const handleChange = (event) => {
+        setSearchTerm(event.target.value)
+    }
+    const filteredNewArray = newArray.filter((item) =>
+        item.year.toLowerCase().includes(searchTerm)
+    )
 
     useEffect(() => {
         dispatch(nobelPrizeActions())
     }, [dispatch])
     return (
         <div>
-            <h1>Each Category {JSON.stringify(params)}</h1>
+            <div className="search-bar">
+                <input className="search" type="number" placeholder="search for year" onChange={handleChange} />
+            </div>
+            <h1 className='text-center mt-3 pb-3'>The Nobel Prizes in {params.categoryName.charAt(0).toUpperCase() + params.categoryName.slice(1)}</h1>
             <div className='container-fluid mt-3 mb-3'>
                 <div className="row">
-                    {newArray.map((item) => (
+                    {filteredNewArray.map((item) => (
                         <button className="col-3 btn eachBtn" key={item.year}>
                             <div className="category">
-                                <div>{item.year}{item.laureates.map((laureate) => (<div key={laureate.id}>{`${laureate.surname} ${laureate.firstname}`}</div>))
+                                <div>{item.year}{item.laureates ? item.laureates.map((laureate) => (<div key={laureate.id}>{`${laureate.surname} ${laureate.firstname}`}</div>)) : <div>No Nobel Prize was awarded this year</div>
                                 }
                                 </div>
                             </div>

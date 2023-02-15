@@ -1,3 +1,4 @@
+import React from 'react'
 import { NavLink } from 'react-router-dom'
 import chemistry from '../assets/chemistry.png'
 import literature from '../assets/literature.png'
@@ -14,10 +15,17 @@ const Home = () => {
         { name: 'physics', icon: physics },
         { name: 'medicine', icon: medicine },
         { name: 'peace', icon: peace }]
+    const [searchTerm, setSearchTerm] = React.useState([]);
+    const handleChange = (event) => {
+        setSearchTerm(event.target.value)
+    }
+    const filteredCategories = categories.filter((category) =>
+        category.name.toLowerCase().includes(searchTerm)
+    )
     return (
         <div>
             <div className="search-bar">
-                <input className="search" type="text" placeholder="Search for Laureate" />
+                <input className="search" type="text" placeholder="Search for Category" onChange={handleChange} />
             </div>
             <div className="nobelImg container mt-3 mb-3">
                 <img className="nobel-logo" src="https://upload.wikimedia.org/wikipedia/en/e/ed/Nobel_Prize.png" alt="nobel-logo" />
@@ -28,8 +36,8 @@ const Home = () => {
             </div>
             <div className='container mt-3 mb-3'>
                 <div className="row">
-                    {categories.map((category) => (
-                        <NavLink className="col-4 btn" key={category.name} to={`/category/${category.name}`}>
+                    {filteredCategories.map((category) => (
+                        <NavLink className="col-4 btn eachCateg" key={category.name} to={`/category/${category.name}`}>
                             <div className="category">
                                 <div className='category-icon'><img className="img-fluid" src={category.icon} alt={category.name} />
                                 </div>

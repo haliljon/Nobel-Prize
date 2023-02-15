@@ -42,6 +42,7 @@ body {
 
 .category-icon img {
   -webkit-filter: invert(100%);
+  filter: invert(100%);
 }
 .category-link {
   height: 30vh;
