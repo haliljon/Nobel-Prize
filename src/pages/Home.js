@@ -19,6 +19,7 @@ const Home = () => {
   const handleChange = (event) => {
     setSearchTerm(event.target.value);
   };
+
   const filteredCategories = categories.filter(
     (category) => category.name.toLowerCase().includes(searchTerm),
   );
@@ -37,7 +38,7 @@ const Home = () => {
       <div className="container mt-3 mb-3">
         <div className="row">
           {filteredCategories.map((category) => (
-            <NavLink className="col-4 btn eachCateg" key={category.name} to={`/category/${category.name}`}>
+            <NavLink className="col-6 col-sm-6 col-lg-4 btn eachCateg" key={category.name} to={`/category/${category.name}`}>
               <div className="category">
                 <div className="category-icon">
                   <img className="img-fluid" src={category.icon} alt={category.name} />

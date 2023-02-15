@@ -57,8 +57,37 @@ body {
   width: 23vw;
 }
 
-.row .eachCateg:nth-child(even) {
-  background-color: #d1447a;
+@media (max-width: 767px) {
+  .row .eachBtn:nth-child(4n + 2),
+  .row .eachBtn:nth-child(4n + 3) {
+    background-color: #d1447a;
+  }
+}
+
+@media (max-width: 991px) {
+  .row .eachCateg:nth-child(4n + 2),
+  .row .eachCateg:nth-child(4n + 3) {
+    background-color: #d1447a;
+  }
+}
+
+@media (min-width: 992px) {
+  .row .eachCateg:nth-child(even) {
+    background-color: #d1447a;
+  }
+
+  .row .eachBtn:nth-child(8n + 2),
+  .row .eachBtn:nth-child(8n + 5),
+  .row .eachBtn:nth-child(8n + 7),
+  .row .eachBtn:nth-child(8n + 4) {
+    background-color: #d1447a;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  .row .eachBtn:nth-child(even) {
+    background-color: #d1447a;
+  }
 }
 
 .row .btn {
@@ -85,10 +114,3 @@ body {
 }
 
 /* each category has a different background color */
-
-.row .eachBtn:nth-child(8n + 2),
-.row .eachBtn:nth-child(8n + 5),
-.row .eachBtn:nth-child(8n + 7),
-.row .eachBtn:nth-child(8n + 4) {
-  background-color: #d1447a;
-}

@@ -1,0 +1,189 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<div>
+  <div
+    className="search-bar"
+  >
+    <input
+      className="search"
+      onChange={[Function]}
+      placeholder="Search for Category"
+      type="text"
+    />
+  </div>
+  <div
+    className="nobelImg container mt-3 mb-3"
+  >
+    <img
+      alt="nobel-logo"
+      className="nobel-logo"
+      src="https://upload.wikimedia.org/wikipedia/en/e/ed/Nobel_Prize.png"
+    />
+    <div>
+      The Nobel Prize Winners
+    </div>
+  </div>
+  <div
+    className="heading pt-3"
+  >
+    <p
+      className="ps-4"
+    >
+      NOBEL PRIZE NOMINEES by CATEGORY
+    </p>
+  </div>
+  <div
+    className="container mt-3 mb-3"
+  >
+    <div
+      className="row"
+    >
+      <a
+        className="col-4 btn eachCateg"
+        href="/category/chemistry"
+        onClick={[Function]}
+      >
+        <div
+          className="category"
+        >
+          <div
+            className="category-icon"
+          >
+            <img
+              alt="chemistry"
+              className="img-fluid"
+              src="chemistry.png"
+            />
+          </div>
+          <div>
+            <h3>
+              Chemistry
+            </h3>
+          </div>
+        </div>
+      </a>
+      <a
+        className="col-4 btn eachCateg"
+        href="/category/economics"
+        onClick={[Function]}
+      >
+        <div
+          className="category"
+        >
+          <div
+            className="category-icon"
+          >
+            <img
+              alt="economics"
+              className="img-fluid"
+              src="economics.png"
+            />
+          </div>
+          <div>
+            <h3>
+              Economics
+            </h3>
+          </div>
+        </div>
+      </a>
+      <a
+        className="col-4 btn eachCateg"
+        href="/category/literature"
+        onClick={[Function]}
+      >
+        <div
+          className="category"
+        >
+          <div
+            className="category-icon"
+          >
+            <img
+              alt="literature"
+              className="img-fluid"
+              src="literature.png"
+            />
+          </div>
+          <div>
+            <h3>
+              Literature
+            </h3>
+          </div>
+        </div>
+      </a>
+      <a
+        className="col-4 btn eachCateg"
+        href="/category/physics"
+        onClick={[Function]}
+      >
+        <div
+          className="category"
+        >
+          <div
+            className="category-icon"
+          >
+            <img
+              alt="physics"
+              className="img-fluid"
+              src="physics.png"
+            />
+          </div>
+          <div>
+            <h3>
+              Physics
+            </h3>
+          </div>
+        </div>
+      </a>
+      <a
+        className="col-4 btn eachCateg"
+        href="/category/medicine"
+        onClick={[Function]}
+      >
+        <div
+          className="category"
+        >
+          <div
+            className="category-icon"
+          >
+            <img
+              alt="medicine"
+              className="img-fluid"
+              src="medicine.png"
+            />
+          </div>
+          <div>
+            <h3>
+              Medicine
+            </h3>
+          </div>
+        </div>
+      </a>
+      <a
+        className="col-4 btn eachCateg"
+        href="/category/peace"
+        onClick={[Function]}
+      >
+        <div
+          className="category"
+        >
+          <div
+            className="category-icon"
+          >
+            <img
+              alt="peace"
+              className="img-fluid"
+              src="peace.png"
+            />
+          </div>
+          <div>
+            <h3>
+              Peace
+            </h3>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+`;

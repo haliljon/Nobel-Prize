@@ -88,7 +88,7 @@
 
 [nobel-prize.com](https://stalwart-meerkat-31f5be.netlify.app/)
 
-[Loom.video](https://www.loom.com/share/812536f9e2d74d5b89d9a7cfb4cd85af)
+[Loom.video](https://www.loom.com/share/64653974c04e4067932994a62e0554de)
 
 ## 💻 Getting Started with Create React App <a name="getting-started"></a>
 
@@ -149,11 +149,6 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 - GitHub: [@githubhaliljon](https://github.com/haliljon)
 - Twitter: [@twitterhaliljon1](https://twitter.com/haliljon1)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/juraboev-haliljon)
-
-👤 **George M'sapenda**
-
-- GitHub: [@github](https://github.com/c00p75)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/georgemsapenda/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

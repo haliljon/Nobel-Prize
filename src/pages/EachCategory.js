@@ -34,7 +34,7 @@ const EachCategory = () => {
       <div className="container-fluid mt-3 mb-3">
         <div className="row">
           {filteredNewArray.map((item) => (
-            <button type="button" className="col-3 btn eachBtn" key={item.year}>
+            <button type="button" className="col-6 col-md-4 col-lg-3 btn eachBtn" key={item.year}>
               <div className="category">
                 <div>
                   {item.year}
