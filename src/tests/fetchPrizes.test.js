@@ -1,9 +1,9 @@
-import fetchPrizeData from "../services/fetchPrizes";
+import fetchPrizeData from '../services/fetchPrizes';
 
 describe('Fetch Data', () => {
-    test('gets the correct data', async () => {
-        const data = await fetchPrizeData();
-        expect(data).toBeInstanceOf(Object);
-        expect(data.id).not.toBeNull();
-    });
+  test('gets the correct data', async () => {
+    const data = await fetchPrizeData();
+    expect(data).toBeInstanceOf(Object);
+    expect(data.id).not.toBeNull();
+  });
 });

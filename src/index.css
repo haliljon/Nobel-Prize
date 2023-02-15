@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Lato:wght@700&display=swap');
+
 * {
-  font-family: 'Cabin', 'san-serif';
+  font-family: 'Cabin', sans-serif;
   font-size: 3vw;
 }
+
 body {
   background-color: #ec4c8b;
   color: white;
@@ -12,9 +15,11 @@ body {
   height: min-content;
   background-color: #d1447a;
 }
+
 .navbar p {
   margin: 0;
 }
+
 .navMicSetting {
   display: flex;
   gap: 1rem;
@@ -24,6 +29,7 @@ body {
   max-height: 15vh;
   width: auto;
 }
+
 .nobelImg {
   display: flex;
   gap: 1rem;
@@ -31,6 +37,7 @@ body {
   justify-content: center;
   max-height: 100%;
 }
+
 .heading {
   height: 2.5rem;
   background-color: #d1447a;
@@ -38,12 +45,13 @@ body {
   align-items: center;
 }
 
-/* catefory*/
+/* catefory */
 
 .category-icon img {
   -webkit-filter: invert(100%);
   filter: invert(100%);
 }
+
 .category-link {
   height: 30vh;
   width: 23vw;
@@ -52,11 +60,12 @@ body {
 .row .eachCateg:nth-child(even) {
   background-color: #d1447a;
 }
+
 .row .btn {
   color: white;
 }
 
-/* search btn*/
+/* search btn */
 .search-bar {
   background: #ec4c8b;
   display: flex;
