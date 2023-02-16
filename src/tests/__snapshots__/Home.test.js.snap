@@ -40,7 +40,7 @@ exports[`matches snapshot 1`] = `
       className="row"
     >
       <a
-        className="col-4 btn eachCateg"
+        className="col-6 col-sm-6 col-lg-4 btn eachCateg"
         href="/category/chemistry"
         onClick={[Function]}
       >
@@ -64,7 +64,7 @@ exports[`matches snapshot 1`] = `
         </div>
       </a>
       <a
-        className="col-4 btn eachCateg"
+        className="col-6 col-sm-6 col-lg-4 btn eachCateg"
         href="/category/economics"
         onClick={[Function]}
       >
@@ -88,7 +88,7 @@ exports[`matches snapshot 1`] = `
         </div>
       </a>
       <a
-        className="col-4 btn eachCateg"
+        className="col-6 col-sm-6 col-lg-4 btn eachCateg"
         href="/category/literature"
         onClick={[Function]}
       >
@@ -112,7 +112,7 @@ exports[`matches snapshot 1`] = `
         </div>
       </a>
       <a
-        className="col-4 btn eachCateg"
+        className="col-6 col-sm-6 col-lg-4 btn eachCateg"
         href="/category/physics"
         onClick={[Function]}
       >
@@ -136,7 +136,7 @@ exports[`matches snapshot 1`] = `
         </div>
       </a>
       <a
-        className="col-4 btn eachCateg"
+        className="col-6 col-sm-6 col-lg-4 btn eachCateg"
         href="/category/medicine"
         onClick={[Function]}
       >
@@ -160,7 +160,7 @@ exports[`matches snapshot 1`] = `
         </div>
       </a>
       <a
-        className="col-4 btn eachCateg"
+        className="col-6 col-sm-6 col-lg-4 btn eachCateg"
         href="/category/peace"
         onClick={[Function]}
       >
